@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
-import { WebGLBackground } from '../WebGLBackground';
 import gsap from 'gsap';
 
 export function Hero() {
@@ -57,8 +56,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <WebGLBackground variant="particles" />
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
         <h1 ref={headingRef} className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight">

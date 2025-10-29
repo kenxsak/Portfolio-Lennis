@@ -15,7 +15,6 @@ import {
 import { Cloud } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { WebGLBackground } from '../WebGLBackground';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -69,12 +68,8 @@ export function TechStack() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-20">
-        <WebGLBackground variant="waves" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-background">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-tech-stack">
             Tech Stack

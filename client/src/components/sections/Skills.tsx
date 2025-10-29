@@ -1,6 +1,5 @@
 import { useEffect, useRef } from 'react';
 import { Badge } from '@/components/ui/badge';
-import { WebGLBackground } from '../WebGLBackground';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import type { Skill } from '@shared/schema';
@@ -61,12 +60,8 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-30">
-        <WebGLBackground variant="gradient" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section id="skills" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-muted/30">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-skills">
             Skills & Expertise

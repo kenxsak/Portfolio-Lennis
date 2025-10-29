@@ -15,7 +15,7 @@ export default function Portfolio() {
   useLenis();
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background dark">
       <Navigation />
       <main>
         <Hero />

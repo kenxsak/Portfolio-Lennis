@@ -7,7 +7,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactFormSchema, type ContactFormInput } from '@shared/schema';
-import { WebGLBackground } from '../WebGLBackground';
 import { Mail, MapPin, Send } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import gsap from 'gsap';
@@ -90,12 +89,8 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-30">
-        <WebGLBackground variant="gradient" />
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+    <section id="contact" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-muted/30">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-contact">
             Get In Touch
