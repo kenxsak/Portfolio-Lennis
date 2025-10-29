@@ -10,9 +10,9 @@ import {
   SiDocker,
   SiFigma,
   SiGit,
-  SiAmazonaws,
   SiVercel
 } from 'react-icons/si';
+import { Cloud } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { WebGLBackground } from '../WebGLBackground';
@@ -30,7 +30,7 @@ const technologies = [
   { name: 'Docker', icon: SiDocker, color: '#2496ED' },
   { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
   { name: 'Git', icon: SiGit, color: '#F05032' },
-  { name: 'AWS', icon: SiAmazonaws, color: '#FF9900' },
+  { name: 'Cloud', icon: Cloud, color: '#FF9900' },
   { name: 'Vercel', icon: SiVercel, color: '#000000' },
 ];
 
