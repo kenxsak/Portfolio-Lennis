@@ -63,10 +63,10 @@ export function Process() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden">
+    <section ref={sectionRef} className="py-12 md:py-16 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-process">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-3" data-testid="heading-process">
             My Process
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -80,7 +80,7 @@ export function Process() {
             className="hidden md:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-primary to-purple-600"
           />
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-4 gap-6">
             {steps.map((step, index) => {
               const Icon = step.icon;
               return (

@@ -58,17 +58,17 @@ export function Hero() {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
-        <h1 ref={headingRef} className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
+        <h1 ref={headingRef} className="font-display text-6xl md:text-8xl lg:text-9xl font-bold mb-5 leading-tight">
           <span className="word inline-block">Creative</span>{' '}
           <span className="word inline-block bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">Developer</span>
         </h1>
 
-        <p ref={subtitleRef} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-12">
+        <p ref={subtitleRef} className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto mb-8">
           Crafting immersive digital experiences with modern web technologies, WebGL graphics, and seamless animations
         </p>
 
-        <div ref={ctaRef} className="flex flex-wrap items-center justify-center gap-4 mb-16">
+        <div ref={ctaRef} className="flex flex-wrap items-center justify-center gap-4 mb-10">
           <Button 
             size="lg" 
             onClick={scrollToProjects}

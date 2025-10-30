@@ -60,10 +60,10 @@ export function Skills() {
   }, []);
 
   return (
-    <section id="skills" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-muted/30">
+    <section id="skills" ref={sectionRef} className="py-12 md:py-16 relative overflow-hidden bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-skills">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-3" data-testid="heading-skills">
             Skills & Expertise
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -71,7 +71,7 @@ export function Skills() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {Object.entries(categories).map(([key, { label, color }]) => (
             <div key={key} className="space-y-4" data-testid={`section-skills-${key}`}>
               <h3 className="font-display text-xl font-semibold mb-4">{label}</h3>

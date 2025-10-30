@@ -45,27 +45,27 @@ export function ProjectDeepDive() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-muted/30">
-      <div className="max-w-7xl mx-auto px-6 space-y-32">
+    <section ref={sectionRef} className="py-12 md:py-16 bg-muted/30">
+      <div className="max-w-7xl mx-auto px-6 space-y-20">
         {featuredProjects.map((project, index) => (
           <div 
             key={project.id} 
-            className={`deep-dive grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
+            className={`deep-dive grid md:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? 'md:flex-row-reverse' : ''}`}
             data-testid={`section-deep-dive-${project.id}`}
           >
-            <div className={`space-y-6 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
+            <div className={`space-y-5 ${index % 2 === 1 ? 'md:order-2' : ''}`}>
               <div className="deep-dive-content">
-                <Badge className="mb-4">{project.year}</Badge>
-                <h3 className="font-display text-3xl md:text-4xl font-bold mb-4" data-testid={`heading-deep-dive-${project.id}`}>
+                <Badge className="mb-3">{project.year}</Badge>
+                <h3 className="font-display text-3xl md:text-4xl font-bold mb-3" data-testid={`heading-deep-dive-${project.id}`}>
                   {project.title}
                 </h3>
-                <p className="text-lg text-muted-foreground mb-6">
+                <p className="text-lg text-muted-foreground mb-5">
                   {project.longDescription}
                 </p>
               </div>
 
-              <Card className="deep-dive-content p-6 bg-background">
-                <CardContent className="p-0 space-y-4">
+              <Card className="deep-dive-content p-5 bg-background">
+                <CardContent className="p-0 space-y-3">
                   <div>
                     <h4 className="font-semibold text-sm text-muted-foreground mb-2">Challenge</h4>
                     <p className="text-foreground">{project.challenge}</p>

@@ -89,10 +89,10 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" ref={sectionRef} className="py-24 md:py-32 relative overflow-hidden bg-muted/30">
+    <section id="contact" ref={sectionRef} className="py-12 md:py-16 relative overflow-hidden bg-muted/30">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-contact">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-3" data-testid="heading-contact">
             Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -100,8 +100,8 @@ export function Contact() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-5">
             <div className="contact-info flex items-start gap-4" data-testid="contact-info-email">
               <div className="p-3 rounded-lg bg-primary/10">
                 <Mail className="w-6 h-6 text-primary" />

@@ -51,10 +51,10 @@ export function About() {
   }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-24 md:py-32 relative">
+    <section id="about" ref={sectionRef} className="py-12 md:py-16 relative">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-8 items-center">
+          <div className="space-y-4">
             <h2 className="about-text font-display text-4xl md:text-5xl font-bold" data-testid="heading-about">
               About Me
             </h2>
@@ -69,8 +69,8 @@ export function About() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 gap-6">
-            <Card className="p-8 hover-elevate transition-all duration-300" data-testid="card-stat-years">
+          <div className="grid grid-cols-1 gap-5">
+            <Card className="p-6 hover-elevate transition-all duration-300" data-testid="card-stat-years">
               <div className="text-center">
                 <div className="counter text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent mb-2" data-target={yearsExperience}>
                   0
@@ -79,8 +79,8 @@ export function About() {
               </div>
             </Card>
 
-            <div className="grid grid-cols-2 gap-6">
-              <Card className="p-6 hover-elevate transition-all duration-300" data-testid="card-stat-projects">
+            <div className="grid grid-cols-2 gap-5">
+              <Card className="p-5 hover-elevate transition-all duration-300" data-testid="card-stat-projects">
                 <div className="text-center">
                   <div className="counter text-3xl md:text-4xl font-bold text-primary mb-1" data-target={projectsCompleted}>
                     0
@@ -89,7 +89,7 @@ export function About() {
                 </div>
               </Card>
 
-              <Card className="p-6 hover-elevate transition-all duration-300" data-testid="card-stat-clients">
+              <Card className="p-5 hover-elevate transition-all duration-300" data-testid="card-stat-clients">
                 <div className="text-center">
                   <div className="counter text-3xl md:text-4xl font-bold text-primary mb-1" data-target={clientsSatisfied}>
                     0

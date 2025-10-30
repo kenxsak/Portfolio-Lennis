@@ -119,10 +119,10 @@ export function Projects() {
   }, []);
 
   return (
-    <section id="projects" ref={sectionRef} className="py-24 md:py-32">
+    <section id="projects" ref={sectionRef} className="py-12 md:py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-projects">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-3" data-testid="heading-projects">
             Featured Projects
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -130,7 +130,7 @@ export function Projects() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
           {projects.map((project) => (
             <Card 
               key={project.id} 

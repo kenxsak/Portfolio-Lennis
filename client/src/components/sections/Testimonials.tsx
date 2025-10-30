@@ -70,10 +70,10 @@ export function Testimonials() {
   const current = testimonials[currentIndex];
 
   return (
-    <section ref={sectionRef} className="py-24 md:py-32 bg-muted/30">
+    <section ref={sectionRef} className="py-12 md:py-16 bg-muted/30">
       <div className="max-w-4xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-display text-4xl md:text-5xl font-bold mb-4" data-testid="heading-testimonials">
+        <div className="text-center mb-10">
+          <h2 className="font-display text-4xl md:text-5xl font-bold mb-3" data-testid="heading-testimonials">
             Client Testimonials
           </h2>
           <p className="text-lg text-muted-foreground">
@@ -82,11 +82,11 @@ export function Testimonials() {
         </div>
 
         <Card className="relative overflow-hidden">
-          <CardContent className="p-12 md:p-16">
-            <Quote className="absolute top-8 left-8 w-16 h-16 text-primary/10" />
+          <CardContent className="p-8 md:p-10">
+            <Quote className="absolute top-6 left-6 w-12 h-12 text-primary/10" />
             
             <div ref={testimonialRef} className="relative z-10">
-              <p className="text-xl md:text-2xl font-medium leading-relaxed mb-8" data-testid="text-testimonial-quote">
+              <p className="text-xl md:text-2xl font-medium leading-relaxed mb-6" data-testid="text-testimonial-quote">
                 "{current.quote}"
               </p>
 
@@ -109,7 +109,7 @@ export function Testimonials() {
           </CardContent>
         </Card>
 
-        <div className="flex items-center justify-center gap-4 mt-8">
+        <div className="flex items-center justify-center gap-4 mt-6">
           <Button 
             size="icon" 
             variant="outline" 

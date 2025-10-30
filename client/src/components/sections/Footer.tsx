@@ -7,9 +7,9 @@ export function Footer() {
   };
 
   return (
-    <footer className="py-12 border-t border-border">
+    <footer className="py-8 border-t border-border">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-5">
           <div className="text-center md:text-left">
             <div className="font-display text-xl font-bold mb-2">Portfolio</div>
             <p className="text-sm text-muted-foreground">
