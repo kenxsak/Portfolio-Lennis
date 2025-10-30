@@ -31,7 +31,7 @@ export function About() {
           toggleActions: 'play none none none',
         },
         onUpdate: function () {
-          counter.textContent = Math.ceil(this.targets()[0].textContent);
+          counter.textContent = String(Math.ceil(this.targets()[0].textContent));
         },
       });
     });

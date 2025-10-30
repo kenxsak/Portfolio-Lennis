@@ -103,16 +103,18 @@ export function Projects() {
   useEffect(() => {
     if (!sectionRef.current) return;
 
-    gsap.from('.project-card', {
-      opacity: 0,
-      y: 80,
-      stagger: 0.15,
-      duration: 0.8,
+    const cards = sectionRef.current.querySelectorAll('.project-card');
+    
+    gsap.set(cards, { opacity: 1 });
+    
+    gsap.from(cards, {
+      y: 60,
+      stagger: 0.12,
+      duration: 0.7,
       ease: 'power3.out',
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 70%',
-        end: 'top 20%',
+        start: 'top 80%',
         toggleActions: 'play none none none',
       },
     });
